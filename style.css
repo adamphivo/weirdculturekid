@@ -1,15 +1,15 @@
 /* General section */
 /* Book section */
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 :root {
   /* colors */
-  --body-bg: #fafafa;
+  --body-bg: #ffffff;
   --page-bg: #f5f5f5;
   --dark-text: #2a2935;
   /* spacing */
   /* this is what defines the global scale */
-  --baseline: 14px;
+  --baseline: 13px;
   /* fonts */
   --book-title: "Tulpen One", sans-serif;
   --title: "Cormorant Garamond", serif;
@@ -37,20 +37,90 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.title {
-  font-size: 4em;
-  font-family: "Amatic SC", cursive;
-  margin: 10px;
-}
-
-.title p {
   margin: 0;
+}
+
+.mainLogo {
+  width: 12em;
+  margin: 2em;
 }
 
 .amazonLink {
   margin: 2em;
+}
+
+.amazonLogo {
+  width: 15em;
+}
+
+.amazonLink a {
+  text-decoration: underline;
+  color: black;
+}
+
+.authorContainer {
+  background: #0b0218;
+  color: white;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+.authorTitle {
+  font-size: 2em;
+  text-align: center;
+  margin: 1.2em;
+}
+
+.authorPortrait {
+  display: block;
+  width: 20em;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+}
+
+.authorBottom {
+  font-size: 2em;
+  text-align: center;
+  margin: 1.2em;
+}
+
+.authorSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.authorDescription {
+  width: 33%;
+  padding: 1.2em;
+  line-height: 2em;
+}
+
+.review {
+  font-size: 2.5em;
+  padding: 2em;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+#review {
+  font-style: italic;
+}
+
+#author {
+  font-size: 0.8em;
 }
 
 .cover {
@@ -146,8 +216,8 @@ body {
 }
 
 .book__page .page__content-book-title {
-  font-family: var(--book-title);
-  font-size: calc(var(--base-size) * 3);
+  font-family: "Lato", sans-serif;
+  font-size: calc(var(--base-size) * 2);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -219,7 +289,7 @@ body {
 
 .book__page .page__content-blockquote-text {
   font-family: var(--title);
-  font-size: calc(var(--base-size) * 0.67);
+  font-size: calc(var(--base-size) * 0.7);
   font-style: italic;
   text-align: justify;
 }
@@ -234,7 +304,7 @@ body {
 
 .book__page .page__content-text {
   font-family: var(--title);
-  font-size: calc(var(--base-size) * 0.67);
+  font-size: calc(var(--base-size) * 0.7);
   text-align: justify;
   text-indent: var(--baseline);
 }

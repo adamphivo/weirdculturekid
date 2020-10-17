@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weird Culture Kid</title>
+    <title>Weird Culture Kids</title>
     <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Logo -->
     <section>
-      <div class="title">
-        <p>Weird</p>
-        <p>Culture</p>
-        <p>Kid</p>
+      <div>
+        <img src="src/logo.jpg" class="mainLogo">
       </div>
     </section>
     <!-- Book Preview -->
@@ -20,9 +18,8 @@
         <div class="book">
           <label for="page-1" class="book__page book__page--1">
             <img
-              src="https://c8.alamy.com/comp/B9JWN8/busness-graffitti-stencilled-on-wall-hanoi-vietnam-B9JWN8.jpg"
-              alt=""
-            />
+            src="https://payload.cargocollective.com/1/1/45680/11874923/flat_yaar_saritevrani_670.jpg"
+            alt="" />
           </label>
 
           <label for="page-2" class="book__page book__page--4">
@@ -30,42 +27,35 @@
               <h1 class="page__content-title">I</h1>
               <div class="page__content-blockquote">
                 <p class="page__content-blockquote-text">
-                  HARI SELDON — . . . born in the 11,988th year of the Galactic
-                  Era; died 12,069. The dates are more commonly given in terms
-                  of the current Foundational Era as -79 to the year 1 F.E. Born
-                  to middle-class parents on Helicon, Arcturus sector (where his
-                  father, in a legend of doubtful authenticity, was a tobacco
-                  grower in the hydroponic plants of the planet), he early
-                  showed amazing ability in mathematics. Anecdotes concerning
-                  his ability are innumerable, and some are contradictory. At
-                  the age of two, he is said to have. . .
+                  <p>Weird Culture Kids : </p>
+                  <p>/wɪəd ˈkʌltʃə kɪd/</p>
+                  <p>noun - informal</p>  
+                </p>
+                <p class="page__content-text">
+                    Person who does not fit into any one specific cultural
+                    standard and who creates his or her own“weird culture” to
+                    give him/herself a sense of belonging. The process of making
+                    a “weird culture”is very straightforward: the WCK takes bits
+                    and pieces of the traditional and nation-state cultures that
+                    s/he’s previously experienced while growing up and mix
+                    everything together to create his/her own customized
+                    culture. These customized cultures are deemed “weird”
+                    because, objectively, there are many different and
+                    conflicting elements within it, but somehow for the WCK in
+                    question, things just seem to fit and to flow.
                 </p>
                 <p class="page__content-blockquote-text">
-                  . . . Undoubtedly his greatest contributions were in the field
-                  of psychohistory. Seldon found the field little more than a
-                  set of vague axioms; he left it a profound statistical
-                  science. . . .
                 </p>
-                <p class="page__content-blockquote-text">
-                  . . . The best existing authority we have for the details of
-                  his life is the biography written by Gaal Dornick who, as a
-                  young man, met Seldon two years before the great
-                  mathematician's death. The story of the meeting . . .
-                </p>
-                <span class="page__content-blockquote-reference"
-                  >Encyclopedia Galactica*</span
-                >
               </div>
               <div class="page__content-text">
                 <p>
-                  His name was Gaal Dornick and he was just a country boy who
-                  had never seen Trantor before. That is, not in real life.
-                </p>
-                <p>
-                  There were nearly twenty-five million inhabited planets in the
-                  Galaxy then, and not one but owed allegiance to the Empire
-                  whose seat was on Trantor. It was the last half-century in
-                  which that could be said.
+                    Weird culture kids were once children who grew up in
+                    international school systems or in foreign host countries
+                    and cultures. They are kids of international and biracial
+                    couples, kids of immigrants who grew up in a place— be it
+                    school systems or countries— where they don’t feel
+                    completely belonging to the culture that they were raised
+                    in.
                 </p>
               </div>
               <div class="page__number">3</div>
@@ -80,7 +70,7 @@
           <label class="book__page book__page--2">
             <div class="book__page-front">
               <div class="page__content">
-                <h1 class="page__content-book-title">Weird Culture Kid</h1>
+                <h1 class="page__content-book-title">Weird Culture Kids</h1>
                 <h2 class="page__content-author">Ngoc Nguyen</h2>
 
                 <p class="page__content-credits">
@@ -139,7 +129,32 @@
     </section>
     <!-- Commercial Link Section -->
     <section class="amazonLink">
-      <h2><a href="#">Get it on Amazon !</a></h2>
+        <a
+        href="https://www.amazon.fr/Little-Book-Stoicism-Resilience-Confidence/dp/3952506907/ref=sr_1_7?dchild=1&keywords=books&qid=1602925905&sr=8-7"
+        target="_blank" >
+          <img src="src/amazonLogo.png" class="amazonLogo"></img>
+        </a>
+    
+    </section>
+    <!-- Author Section -->
+    <div class="authorContainer">
+      <p class="authorTitle">About the author</p>
+      <!-- <img src="src/biPortrait.jpg" class="authorPortrait"> -->
+      <section class="authorSection">
+            <p class="authorDescription">
+              My name is Ngoc NGUYEN and I am the author of Weird Culture Kids,
+              a memoir about my growing up in different cultures and not knowing
+              where to fully belong. I am kind of a sweet girl but sometimes I
+              wish could have feelings.
+            </p>
+        </section>
+    </div>
+    <!-- Review Section -->
+    <section class="reviewSection">
+      <div class="review" id="reviewSection">
+        <p id="review"></p>
+        <p id="author"></p>
+    </div>
     </section>
     <script src="index.js"></script>
   </body>
