@@ -169,7 +169,7 @@ body {
           justify-content: space-between;
   color: #0b0218;
   font-family: "Lato", sans-serif;
-  padding: 4em;
+  padding: 2em;
 }
 
 .socialMediaContainer {
@@ -200,11 +200,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100%;
-  font-size: 1.5em;
-  font-weight: bold;
 }
 
 .fnacLogo {
