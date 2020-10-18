@@ -40,6 +40,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .mainLogo {
@@ -52,7 +53,7 @@ body {
 }
 
 .amazonLogo {
-  width: 15em;
+  width: 18em;
 }
 
 .amazonLink a {
@@ -149,6 +150,97 @@ body {
 
 #author {
   font-size: 0.8em;
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #0b0218;
+  font-family: "Lato", sans-serif;
+  padding: 4em;
+}
+
+.socialMediaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #0b0218;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2em;
+}
+
+.socialIcon {
+  width: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.retailerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fnacLogo {
+  width: 6em;
+}
+
+.amazonSVG {
+  width: 6em;
+}
+
+.footerRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.footerRight a {
+  text-decoration: none;
+  color: #0b0218;
+}
+
+.copyrightBar {
+  background-color: #0b0218;
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .cover {
