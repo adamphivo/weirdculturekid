@@ -68,7 +68,7 @@ body {
 
 .authorContainer {
   background: #3e8886;
-  background: linear-gradient(180deg, #3e8886 0%, #460979 70%, #1c0736 100%);
+  background: linear-gradient(180deg, #3e8886 0%, #3e8886 35%, #1c0736 100%);
   color: whitesmoke;
   font-family: "Lato", sans-serif;
   width: 80%;
