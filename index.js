@@ -34,16 +34,18 @@ let reviews = [
     world, understanding different kinds of people, and what makes them &quot;weird
     cultured&quot; is both informative and insightful. Ngoc is an amazing writer, and a
     young woman who sees the world in a way that makes us all better. This is a
-    great read.`, `Richard Sherwood, Chairman of AEG - American Education
-      Group`
+    great read.`,
+    `Richard Sherwood, Chairman of AEG - American Education
+      Group`,
   ],
   [
     `It is simple, yet grabs your heart strings. It talks more to the emotional part
     of the reader than the intellectual part. I found myself laughing and crying
     and remembering my own parallel personal stories throughout the whole
-    book.`, `Ani Flys Junquera, Georgetown Program Resident Director in
-      Madrid, Spain`
-  ]
+    book.`,
+    `Ani Flys Junquera, Georgetown Program Resident Director in
+      Madrid, Spain`,
+  ],
 ];
 
 let reviewSection = document.getElementById("reviewSection");
@@ -62,3 +64,40 @@ setInterval(function () {
     duration: 24000,
   });
 }, 24000);
+
+// Browsing Reviews
+let currentDescription = document.getElementById("currentDescription");
+let next = document.getElementById("next");
+let back = document.getElementById("back");
+let currentPage = 0;
+currentDescription.innerHTML = interview[currentPage];
+currentPage == 0
+  ? (back.style.visibility = "hidden")
+  : (back.style.visibility = "visible");
+currentPage == interview.length - 1
+  ? (next.style.visibility = "hidden")
+  : (next.style.visibility = "visible");
+
+function goTo(value) {
+  value == "next" ? currentPage++ : currentPage--;
+  currentDescription.animate([{ opacity: 1 }, { opacity: 0 }, { opacity: 1 }], {
+    duration: 2000,
+  });
+  setTimeout(function () {
+    currentDescription.innerHTML = interview[currentPage];
+  }, 1000);
+  currentPage == 0
+    ? (back.style.visibility = "hidden")
+    : (back.style.visibility = "visible");
+  currentPage == 7
+    ? (next.style.visibility = "hidden")
+    : (next.style.visibility = "visible");
+}
+
+// Event listeners
+next.addEventListener("click", function () {
+  goTo("next");
+});
+back.addEventListener("click", function () {
+  goTo("previous");
+});
